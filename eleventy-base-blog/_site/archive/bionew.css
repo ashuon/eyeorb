@@ -1,0 +1,143 @@
+body {
+    background-image: url('../images/redrosesblkbg.gif');
+    color: white;
+    filter: grayscale(70%);
+    animation: bgScroll 20s linear infinite;
+}
+      @keyframes bgScroll {
+        0% {
+          background-position : 0px 0px
+        }
+        100% {
+          background-position : 0px -211px
+        }
+      }
+.everythingwrap {
+    width: 1050px;
+    height: 600px;
+    border: 1px transparent solid;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.middlewrapper {
+    width: 800px;
+    height: 600px;
+    background-color: #313030;
+    display: table-cell;
+    vertical-align: middle;
+    align-content:center;
+    border: 30px solid transparent;
+    border-image: url(../images/fadedlace.png) 17 round; 
+    background-clip: padding-box;
+}
+
+.insidewrapper {
+    width: 755px;
+    height: 550px;
+    background-color: #555655;
+    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding-top: 0px;
+}
+
+.koishicolumn {
+    width: 300px;
+    height: 550px;
+    background-image: linear-gradient(#424040, #303030);
+    order: 1;
+    padding: 5px;
+    position: relative;
+}
+
+.aboutcolumn {
+    width: 300px;
+    height: 550px;
+    background-color: #424040;
+    order: 2;
+    padding: 5px;
+}
+
+.interestscolumn {
+    width: 300px;
+    height: 550px;
+    background-color: #424040;
+    order: 3;
+    padding: 5px;
+}
+.interests {
+    width: 240px;
+    height: 240px;
+    overflow: scroll;
+    border: 0px solid transparent;
+    background-image: linear-gradient(transparent, black);
+    text-align: left;
+    padding: 5px;
+}
+.speech {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    position: absolute;
+    left: 4em;
+    top: 1em;
+}
+.speech-bubble {
+  height: 180px;
+  width: 220px;
+  border: 3px solid transparent;
+  background: lightgray;
+  position: relative;
+  border-radius: 20px;
+  z-index: 3;
+  display: table-cell;
+  vertical-align: middle;
+  align-content:center;
+  padding: 5px;
+  line-height: 0.8;
+    
+  
+}
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  width: 0;
+  border-top: 40px solid lightgray;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 1;
+}
+
+
+#koisi {
+    left: -3em;
+    bottom: 0;
+    z-index: 2;
+    position: relative;
+}
+
+#komeiji {
+    border: 4px double black;
+}
+
+mark {
+    background-color: #303030;
+    color: white;
+}
+a {
+    color: #A1B894;
+}
+h1 {
+    text-align: right;
+    font-size: 20px;
+    background-image: linear-gradient(90deg, transparent, #c7a9f9);
+    color: black;
+}

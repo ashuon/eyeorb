@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../archive/blog.css">
+    <link rel="icon" type="image/x-icon" href="images/grave.gif">
+    <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script> 
+      <meta name="robots" content="noindex">
+    <style>
+    img {
+    image-rendering: pixelated;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+    iframe {
+        border: none;
+        }
+        
+#musicboxyay{
+  position: absolute;
+  top:300px;
+  left: 90px;
+  z-index: 1;
+}
+    </style>
+        <script>
+    (function titleScroller(text) {
+    document.title = text;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+    }, 100);
+}("A place like dark and deep forest. I am walking round and round. I feel like i have been here once before. The temple and the tower are both several levels bigger than usual. It is just like I got lost and stumbled into a bigger world. It is very dark and there is no sky. This is a world i know."));
+</script>
+    </head>
+    <body><div style="width:40px; height:40px; position:absolute; bottom:0px; left:0px;">
+	<div id="winamp-container"></div>
+    <script>
+const Winamp = window.Webamp;
+// All configuration options are optional.
+const webamp = new Webamp({
+    // Optional.
+    initialTracks: [
+        {
+            metaData: {
+                artist: "KAKU P-MODEL",
+                title: "Anti-Vistoron",
+            },
+            url: "../music/antivistoron.mp3",
+        }, {
+            metaData: {
+                artist: "Kaku P-MODEl",
+                title: "Big Brother",
+            },
+            url: "../music/bigbrother.mp3",
+        },
+        {
+            metaData: {
+                artist: "K*r*nb*",
+                title: "Lamprey Hole",
+            },
+            url: "../music/lampreyhole.mp3",
+        },
+        {
+            metaData: {
+                artist: "Susumu Hirasawa",
+                title: "Sekai Turbine",
+            },
+            url: "../music/sekai_turbine.mp3",
+        },
+        {
+            metaData: {
+                artist: "Susumu Hirasawa",
+                title: "Amputee Gerbera-E",
+            },
+            url: "../music/amputee_gerbera_e.mp3",
+        },
+        {
+            metaData: {
+                artist: "P-MODEL",
+                title: "Recovery Ship",
+            },
+            url: "../music/recovery_ship.mp3",
+        },
+      ],
+    initialSkin: {
+        url: "../webamp/touhou_winamp_skin.wsz"
+    },
+});
+webamp.renderWhenReady(document.getElementById('winamp-container'));
+</script>
+</div>
+        <div class="wrapper">
+        <div class="header">
+            </div>
+                <marquee><span style="color:#A3FFB1">
+                    A memory so far away and distant /
+ Wilted away with the need to grow up /
+ In the repeating attempts to mimic adults /
+ A clear indigo blue sky /
+ Leapt into the far recesses of my memory / 
+ Searching for stars in the middle of the dark
+                    
+                </span></marquee>
+             <div class="main">
+            <iframe src="../../blog/mainpage.html" title="home" name="iframe_a" width="565" height="375"></iframe>
+            </div>
+            <div class="side">
+                <div class="img">
+                    <img src="../images/hiro_transparent3.png" style="position:absolute; right: 5px;top: 80px;" width=220>
+                </div>
+         <a href="../blog/mainpage.html" target="iframe_a">&#77951; ~ about this blog</a><br>
+         <a href="../archive/404.html">&#77951; ~ go back?</a><br><br>
+         <div class="entries">
+         <a href="../../blog/entry1.html" target="iframe_a">april 21st, 2024</a><br>
+         <a href="../../blog/entry2.html" target="iframe_a">may 4th, 2024</a><br>
+         <a href="../../blog/entry3.html" target="iframe_a">june 10th, 2024</a><br>
+         <a href="../../blog/entry4.html" target="iframe_a">july 7th, 2024</a><br>
+         <a href="../../blog/entry5.html" target="iframe_a">august 6th, 2024</a><br>
+         <a href="../../blog/entry6.html" target="iframe_a">august 29th, 2024</a><br>
+         <a href="../../blog/entry7.html" target="iframe_a">october 26th, 2024</a><br>
+         </div>
+            </div>
+            </div>
+            <div id="musicboxyay"></div>
+    </body>
+</html>

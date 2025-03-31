@@ -1,0 +1,75 @@
+<style>
+body {
+color: white;
+font-family: gothic;
+}
+
+::selection {
+	background: red;
+	color: white;
+}
+@font-face {
+  font-family: gothic;
+  src: url(../../shrines/suba/MetalGothic.ttf);
+}
+
+h1 {
+	font-size: 25px;
+	text-shadow: 5px 5px 10px rgb(20, 21, 25, 0.7);
+}
+      #btn
+      {
+        background-image: url('../../shrines/suba/ayana_sprite.png');
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 400px;
+        border:none;
+        outline: none;
+        user-select:none;
+      cursor:pointer;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+      }
+      #btn:active
+      {
+      background-image: url('../../shrines/suba/ayana_sprite.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 410px;
+        opacity: 0.5;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      a {
+        color: #CCCCFF;
+      }
+</style>
+<script type="text/javascript">
+
+function AudioInst() {
+var audio = document.createElement("audio");
+        audio.src = "../../music/ayana_hehe.ogg";
+        audio.play();      
+        type="module";
+}
+
+var clicks = 0;
+
+function onClick() {
+  clicks += 1;
+  document.getElementById("clicks").innerHTML = clicks;
+  type="module";
+}
+</script>
+<center>
+	   <h1><img src="../../shrines/suba/crossb_a.gif"> The brain is wider than the sky. <img src="../../shrines/suba/crossb_a.gif"></h1>
+	 <button
+          id="btn"
+          onclick="AudioInst(); onClick();"
+          style="width:335px;height:345px;"
+        ></button>
+        <script type="text/javascript"></script>
+        <p>ayanas clicked: <a id="clicks">0</a></p>
+
+        <p>inspired by <a href="https://www.hiyoooo.com/">this</a></p>
+	   </center>

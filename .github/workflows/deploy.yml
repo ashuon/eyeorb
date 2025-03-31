@@ -18,5 +18,5 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
           nekoweb-folder: 'site'
-          directory: '.\eleventy-base-blog\_site'
+          directory: '_site'
 

@@ -1,0 +1,138 @@
+body {
+    background-image: url('../images/tree_g.png');
+    background-color: black;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    color: white;
+    filter: grayscale(60%);
+}
+
+.everythingwrap {
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+}
+.wrapper {
+    width: 700px;
+    height: 500px;
+    background-color: #343338;
+    margin: auto;
+    border: 10px solid transparent;
+    border-image: url(../images/fadedlace.png) 10 round;
+    background-clip: padding-box; 
+    position: relative;
+    margin-top: 90px;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    background-image: url('../images/koishi_goop.jpg');
+    background-size: cover;
+    margin: 10px;
+    float: left;
+    border: 2px double black;
+}
+
+.mainbox {
+	margin: 10px;
+    display: inline-block;
+    position: relative;
+    width: 450px;
+	height: 400px;
+	background-color: #807d8e;
+    border-radius: 20px;
+    border: 3px double black;
+}
+.border{
+  border: 8px solid white;
+}
+
+.tri-right.border.left-in:before {
+	content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 12px 62px 12px 0;
+    border-color: black;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -63px;
+    top: 56px;
+}
+.tri-right.left-in:after{
+	content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 12px 62px 12px 0;
+    border-color: transparent #807d8e;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: -62px;
+    top: 56px;
+}
+
+
+.talktext{
+    padding: 1em;
+	text-align: left;
+    line-height: 1.5em;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 420px;
+    height: 370px;
+}
+
+.stamps {
+    width: 200px;
+    height: 50px;
+    border: 1px transparent solid;
+    position: absolute;
+    margin: 10px;
+    top: 210px;
+}
+
+.etc {
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+    position: absolute;
+    margin: 10px;
+    top: 270px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.footer {
+    width: 300px;
+    height: 50px;
+    border: 4px #29282C double;
+    position: absolute;
+    margin: 10px;
+    top: 410px;
+    left: 300px;
+    text-align: center;
+}
+
+.sidesidebox {
+    width: 200px;
+    height: 150px;
+    border: 10px solid transparent;
+    border-image: url(images/fadedlace.png) 10 round;
+    background-clip: padding-box; 
+    background-color: #343335;
+    position: absolute;
+    margin: 10px;
+    top: 460px;
+    left: 800px;
+    display: inline-block;
+    text-align: center;
+    overflow: scroll;
+    font-size: 14px;
+}
+a {
+    color: #db9eff;
+}

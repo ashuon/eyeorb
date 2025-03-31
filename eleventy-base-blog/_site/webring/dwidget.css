@@ -1,0 +1,49 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (è’œ) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #webringid with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+#cosplayring {
+  margin: 0 auto;
+  padding: 5px;
+  width: 300px;
+  height: 120px;
+  background-image: url('../webring/mado_kyuukyuu.png');
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: 5px 5px 20px #141519 inset;
+  border: 4px double black;
+}
+
+#cosplayring table {
+  margin: 0 auto; /* centers the widget */
+}
+
+::selection {
+    background: rgba(32, 29, 33, 0.2);
+}
+
+#cosplayring table tr td {
+  padding: 15px; /* creates some space between the links and text inside the widget */
+}
+
+#cosplayring .webring-prev {
+  text-align:right;
+}
+
+#cosplayring .webring-info {
+   text-align:center;
+}
+
+#cosplayring .webring-next {
+  text-align:left;
+}
+
+#cosplayring .webring-links {
+  font-size:small;
+}
+	a {
+	color: #F5EDED;
+	text-shadow: 4px 4px 4px black;
+	}

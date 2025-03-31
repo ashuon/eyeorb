@@ -1,0 +1,93 @@
+body {
+    background-image: url('/img/bg.png');
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #EBEBFF;
+    }
+    
+    .wrapper {
+        border: 4px double rgb(255, 255, 255, 0.6);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        max-width:100vh;
+        gap: 10px;
+        padding: 10px;
+        margin: auto;
+        width: 1400px;
+    }
+    
+    .header {
+        grid-column: span 3 / span 3;
+        border: 4px double black;
+        background-image: url("/img/tkmiz.gif"), url("/img/bg2.png");
+        background-size: 50%, cover;
+        background-position: auto, center;
+        background-repeat: no-repeat, no-repeat;
+        text-align: right;
+        padding: 5px;
+    }
+    
+    .content {
+        border: 4px double black;
+        grid-column: span 2 / span 2;
+        grid-row: span 4 / span 4;
+        grid-row-start: 2;
+        background-image: url("/img/ayan6.png"), url('/img/bg2.png');
+        background-position: right top, center;
+        background-size: 140%, cover;
+        background-repeat: no-repeat;
+        padding: 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 565px;
+    }
+    
+    .sidebar {
+        border: 4px double black;
+        grid-row: span 4 / span 6;
+        grid-column-start: 3;
+        grid-row-start: 2;
+        background-image: url('/img/yuuri_wiggle.gif'), url('/img/bg2.png');
+        background-position: bottom, center;
+        background-repeat: repeat-x, no-repeat;
+        background-size: 40%, auto;
+        padding: 10px;
+        height: 565px;
+        list-style: square inside url("/img/hashtag3.png");
+    }
+    
+    h1 {
+        background-image: linear-gradient(rgb(63, 255, 165), rgb(220, 255, 164));
+        color: transparent;
+        background-clip: text;
+        text-shadow: 0px 0px 10px #a5ffc3;
+    }
+
+    @media screen and (min-width: 640px) {
+        .wrapper
+        .header {
+            grid-column: span 3 / span 3;}
+        .content {
+            grid-column: span 2 / span 2;
+            grid-row: span 6 / span 6;
+            grid-row-start: 2;}
+      }
+      
+      a {
+        background-image: linear-gradient(#c3fffa, rgb(182, 180, 255));
+        color: transparent;
+        background-clip: text;
+      }
+
+      ::selection {
+        background-color: rgba(219, 28, 28, 0.5);
+        color: white;
+      }
+
+      p {
+        background-image: linear-gradient(#ffffff, #EBEBFF);
+        color: transparent;
+        background-clip: text;
+    }

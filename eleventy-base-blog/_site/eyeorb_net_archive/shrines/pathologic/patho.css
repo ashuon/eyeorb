@@ -1,0 +1,48 @@
+body {
+    background-image: url('../../shrines/pathologic/bg.png');
+    background-size: cover;
+    color: #9E9E9E;
+}
+
+.mainbox {
+    width: 710px;
+    height: 610px;
+    border: solid #9E9E9E 1px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+.sidetopbox {
+    width: 140px;
+    height: 140px;
+    border: solid #9E9E9E 1px;
+    background-image: url('../../shrines/pathologic/tragedian.png');
+    background-size: cover;
+}
+
+.logobox {
+    width: 550px;
+    height: 140px;
+    border: solid #9E9E9E 1px;
+}
+
+.iframe {
+    width: 545px;
+    height: 450px;
+    border-color:#9E9E9E;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.sidelinks {
+    width: 145px;
+    height: 450px;
+    border: solid #9E9E9E 1px;
+    text-align: center;
+}

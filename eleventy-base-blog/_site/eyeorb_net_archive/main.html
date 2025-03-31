@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pictures/endsky_blink.gif" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+                     // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+       let username = "eye"; // <<<--- Insert your username here!
+
+       (async () => {
+         try {
+           const request = await fetch(`https://nekoweb.org/api/site/info/${username}`,);
+           const json = await request.json();
+
+           const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+           const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+           if (document.getElementById("created")) document.getElementById("created").innerHTML = `<em>Created</em>: ${created}`;
+           if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `<em>Updated</em>: ${updated}`;
+           if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `<em>Visits</em>: ${json.views}`;
+           if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `<em>Followers</em>: ${json.followers}`;
+         } catch (error) {
+           console.error(error);
+         }
+       })();
+      (function titleScroller(text) {
+             document.title = text;
+             setTimeout(function () {
+                 titleScroller(text.substr(1) + text.substr(0, 1));
+             }, 200);
+         }("orbing around... "));
+    </script> 
+	<style>
+       .button {
+            font-size: 20px;
+            border: 1px black solid;
+            background-color:transparent;
+            color: white;
+            width: 110px;
+  background: -webkit-linear-gradient(#ff3838, #840202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+         }
+		 
+		 .button:before {
+		 content: url('pictures/pink_swirl.gif');
+		 }
+		 
+    </style>
+  </head>
+  <body>
+  <div class="cosmic">
+     <div class="everythingbox">
+         <div class="header">
+		 
+		 </div>
+		 <div id="bordr" class="box1">
+		 
+		 <div class="gradient">
+		 <p>stuff</p>
+		 </div>
+            <center>
+		 <div id="misc-one">
+                <p>add my button (hotlink ok)</p>
+                <img src="site_button.gif" />
+					<iframe
+                    src="https://nekoweb.org/frame/follow"
+                    frameborder="0"
+                    width="170"
+                    height="28"
+                  ></iframe>
+              </div>
+              <div id="misc-two">
+              </div>
+            </center>
+              <div
+                id="touhou-ring"
+                style="display: flex; justify-content: center;"
+              >
+                <script
+                  type="text/javascript"
+                  src="https://glassplanet.neocities.org/webring/touhou/onionring-variables.js"
+                ></script>
+                <script
+                  type="text/javascript"
+                  src="https://glassplanet.neocities.org/webring/touhou/widget/widget-sa1.js"
+                ></script>
+              </div> 
+			  <div id="misc-three">
+               <center style="color: #9a9aa8;">
+                    <em id="created">Created:</em>
+                    <br />
+                    <em id="updated">Updated:</em>
+                    <br /><em id="followers">Followers:</em>
+                    <br />
+<a href="https://eye.atabook.org">sign my guestbook?</a>
+                  </center>
+              </div>
+              <div id="misc-four">
+			  <table border="0">
+                <tr>
+                  <td>
+                    <a href="http://quiz.ravenblack.net/flavour.pl"
+                      ><img
+                        border="0"
+                        align="LEFT"
+                        width="90"
+                        height="90"
+                        src="http://quiz.ravenblack.net/flavour/14.png"
+                        alt="What Flavour Are You? I taste like Smoke." /></a
+                    >I taste like <b>Smoke</b>.<br />
+                    I'm an unusual taste; I can be strong and potent, or I can
+                    be a mere hint, almost not there. I can blow away on the
+                    wind, or I can stick to your clothes that you left out when
+                    your neighbour was having a bonfire. I'm mean that way.
+                    <a href="http://quiz.ravenblack.net/flavour.pl"
+                      >What Flavour Are You?</a
+                    >
+                  </td>
+                </tr>
+              </table>
+              </div>
+		 </div>
+		 <div class="info">
+		 <img src="pictures/koishi_danc.gif" width=80 style="filter: grayscale(60%); float:left;">
+		 <p>welcome to <span style="color: #DDA0DD">eyeorb.net</span>  @ 
+		 <span style="color: #00FF7F">nekoweb.</span>. this is my
+self-expression hub for 
+whatever i want.... i'm 
+an isolated and strange 
+otaku from new england.</p>
+		 </div>
+		 <div class="links">
+		  <div class="gradient">
+		 <p>links</p>
+		 </div>
+		 <p><a class="button" href="me.html"> me</a></p>
+		 <p><a class="button" href="shrines.html"> shrines</a></p>
+		 <p><a class="button" href="blog.html"> blog</a></p>
+		 <p><a class="button" href="gallery.html"> art gallery</a></p>
+		 <p><a class="button" href="https://eyeorb.net/webring/cosplay.html"> webring</a></p>
+		 <p><a class="button" href="dame.html"> dame</a></p>
+		 <p><a class="button" href="links.html"> next...?</a></p>
+		 <img src="pictures/koishi_pixel.png" style="filter: grayscale(60%); position: absolute; top: 72%; image-rendering: pixelated;" width=220>
+		 </div>
+		 <div class="komeiji">
+		 <div class="gradient">
+		 <p>etc</p>
+		 </div>
+		 <center>
+		 <p>
+              <img src="pictures/ayana_banner2.jpg" width="105" /><img
+                src="pictures/komeiji_banner.jpg"
+                width="105"
+              /><img src="pictures/higurashibanner2.png" width="105" /><img
+                src="pictures/higurashibanner4.png"
+                width="105"
+              />
+            </p>
+		 </center>
+		 <img src="pictures/koishi_satori.png" title="art by me" style="filter: grayscale(60%);" width=410>
+			</div>
+		 <div class="box8">
+          <!--CALENDAR CODE STARTS HERE-->
+          <!--CALENDAR CODE STARTS HERE-->
+          <!--CALENDAR CODE STARTS HERE-->
+		  <div class="calendar">
+            <style>
+
+
+
+              td{
+                  background: transparent;
+                  color:white;
+              }
+            </style>
+
+            <!--CODE-->
+
+            <div id="calendar-container">
+              <div
+                id="MyClockDisplay"
+                class="clock"
+                onload="showTime()"
+                style="font-size: 12px;letter-spacing: 4px;text-align:center;background-image: linear-gradient(black, #1D0003);border-top:3px ridge red;border-left:3px ridge red;border-right:3px ridge red;color:white;border-bottom:none;width: 185px;"
+              ></div>
+
+              <script type="text/javascript">
+                function showTime(){
+                    var date = new Date();
+                    var h = date.getHours(); // 0 - 23
+                    var m = date.getMinutes(); // 0 - 59
+                    var s = date.getSeconds(); // 0 - 59
+                    var session = "AM";
+
+                    if(h == 0){
+                        h = 12;
+                    }
+
+                    if(h > 12){
+                        h = h - 12;
+                        session = "PM";
+                    }
+
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+
+                    var time = h + ":" + m + ":" + s + " " + session;
+                    document.getElementById("MyClockDisplay").innerText = time;
+                    document.getElementById("MyClockDisplay").textContent = time;
+
+                    setTimeout(showTime, 1000);
+
+                }
+
+                showTime();
+              </script>
+              <div
+                class="calendar"
+                align="center"
+                style="height: 150px;background-image: linear-gradient(black, #1D0003);border: 3px ridge red;color:white;font-size: 8px;"
+              >
+                <script text="JavaScript">
+
+                  monthnames = new Array(
+                    'January',
+                    'February',
+                    'March',
+                    'April',
+                    'May',
+                    'June',
+                    'July',
+                    'August',
+                    'September',
+                    'October',
+                    'November',
+                    'December'
+                  );
+                  var linkcount = 0;
+                  class addlink {
+                    constructor(month, day, href) {
+                      var entry = new Array(3);
+                      entry[0] = month;
+                      entry[1] = day;
+                      entry[2] = href;
+                      this[(linkcount += 1)] = entry;
+                    }
+                  }
+
+                  Array.prototype.addlink = addlink;
+                  linkdays = [];
+                  monthdays = new Array(12);
+                  monthdays[0] = 31;
+                  monthdays[1] = 28;
+                  monthdays[2] = 31;
+                  monthdays[3] = 30;
+                  monthdays[4] = 31;
+                  monthdays[5] = 30;
+                  monthdays[6] = 31;
+                  monthdays[7] = 31;
+                  monthdays[8] = 30;
+                  monthdays[9] = 31;
+                  monthdays[10] = 30;
+                  monthdays[11] = 31;
+                  todayDate = new Date();
+                  thisday = todayDate.getDay();
+                  thismonth = todayDate.getMonth();
+                  thisdate = todayDate.getDate();
+                  thisyear = todayDate.getYear();
+                  thisyear = thisyear % 100;
+                  thisyear = thisyear < 50 ? 2000 + thisyear : 1900 + thisyear;
+                  if ((thisyear % 4 === 0 && !(thisyear % 100 === 0)) || thisyear % 400 === 0) {
+                    monthdays[1] += 1;
+                  }
+                  startspaces = thisdate;
+                  while (startspaces > 7) {
+                    startspaces -= 7;
+                  }
+                  startspaces = thisday - startspaces + 1;
+                  if (startspaces < 0) {
+                    startspaces += 7;
+                  }
+                  document.write("<font face='arial'>");
+                  document.write('<table border=0 ');
+                  document.write(' style="text-align: center;" cellpadding=2 cellspacing=4>');
+                  document.write(
+                    '<tr><td colspan=7><center>' +
+                    monthnames[thismonth] +
+                    ' ' +
+                    thisyear +
+                    '</strong></center></font></td></tr>'
+                  );
+                  document.write('<tr>');
+                  document.write('<td align=center><b>S</b></td>');
+                  document.write('<td align=center><b>M</b></td>');
+                  document.write('<td align=center><b>T</b></td>');
+                  document.write('<td align=center><b>W</b></td>');
+                  document.write('<td align=center><b>T</b></td>');
+                  document.write('<td align=center><b>F</b></td>');
+                  document.write('<td align=center><b>S</b></td>');
+                  document.write('</tr>');
+                  document.write('<tr>');
+                  for (s = 0; s < startspaces; s += 1) {
+                    document.write('<td> </td>');
+                  }
+                  count = 1;
+                  while (count <= monthdays[thismonth]) {
+                    for (b = startspaces; b < 7; b += 1) {
+                      linktrue = false;
+                      document.write('<td>');
+                      for (c = 0; c < linkdays.length; c += 1) {
+                        if (linkdays[c] != null) {
+                          if (linkdays[c][0] === thismonth + 1 && linkdays[c][1] === count) {
+                            document.write('<a href="' + linkdays[c][2] + '">');
+                            linktrue = true;
+                          }
+                        }
+                      }
+                      if (count === thisdate) {
+                        document.write("<b><font color='#aa68f2'></b>");
+                      }
+                      if (count <= monthdays[thismonth]) {
+                        document.write(count);
+                      } else {
+                        document.write(' ');
+                      }
+                      if (count === thisdate) {
+                        document.write('</font>');
+                      }
+                      if (linktrue) {
+                        document.write('</a>');
+                      }
+                      document.write('</td>');
+                      count += 1;
+                    }
+                    document.write('</tr>');
+                    document.write('<tr>');
+                    startspaces = 0;
+                  }
+                  document.write('</table></p>');
+                </script>
+              </div>
+            </div>
+          </div>
+          <!--CALENDAR CODE ENDS HERE-->
+          <!--CALENDAR CODE ENDS HERE-->
+          <!--CALENDAR CODE ENDS HERE-->
+          <!--CALENDAR CODE ENDS HERE-->
+		 </div>
+		 <div class="buttons">
+		 <center>
+		 <img src="pictures/pink_swirl.gif" width=40><img src="pictures/openmind.gif" width=88><img src="pictures/pink_swirl.gif" width=40>
+		 </center>
+		 <marquee>
+                <img src="pictures/aponow.gif" /><img
+                  src="pictures/besteyes_ani.gif"
+                /><img src="pictures/denpaNOW.png" /><img
+                  src="pictures/piracy.gif"
+                /><img src="pictures/killmenow.gif" /><img
+                  src="pictures/insane.gif"
+                />
+              </marquee></div>
+     </div>
+  </div>
+  </body>
+ </html>

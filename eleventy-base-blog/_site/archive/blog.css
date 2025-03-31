@@ -1,0 +1,121 @@
+ @font-face {
+        font-family: plantagenet;
+        src: url("../fonts/Plantagenet_Cherokee_Regular.ttf")
+    }
+ 
+body {
+    background-color: black;
+    color: white;
+    background-image: url('../images/skulls_bg2.jpg');
+    background-size: 20%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: plantagenet;
+    cursor: url('../images/eyecursor.cur'),auto;
+    filter: grayscale(60%);
+}
+
+::selection {
+  background: #26302e;
+}
+.wrapper {
+    position: absolute;
+    left: 380px;
+    top: 30px;
+    width: 750px;
+    height: 530px;
+    border: 30px solid transparent;
+    border-image: url(../../images/black_lace.png) 17 round; 
+    background-clip: padding-box;
+    background-image: linear-gradient(#4C5451, #282929);
+    padding: 15px;
+    overflow: hidden;
+}
+
+.header {
+    width: 700px;
+    height: 110px;
+    border: 3px black double;
+    background-image: url('..//images/juntgw.png');
+    background-position: 50% 10%;
+    background-size: 100%;
+    margin: auto;
+}
+.main {
+    text-align: center;
+    width: 565px;
+    height: 385px;
+    border: 3px black double;
+    background:rgb(0,0,0);
+    background: transparent\9;
+    background:rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+    zoom: 1;
+    float:left;
+    margin-right: 10px;
+}
+.side {
+    text-align: center;
+    width: 160px;
+    height: 385px;
+    border: 3px black double;
+    background-color: #2E3834;
+    overflow: hidden;
+}
+
+.entries {
+    width: 130px;
+    height: 150px;
+    border: 3px black double;
+    overflow: scroll;
+    margin: auto;
+}
+
+a {
+    color: #A3FFB1;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: #fafffb;
+    cursor: url('../images/eyecursorlink.cur'),auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px double black;
+  padding: 0;
+}
+
+.img {
+    width: 120px;
+    height: 120px;
+    border: 1px black double;
+    background-image: linear-gradient(grey, black);
+    margin: auto;
+    padding-top: 10px;
+}
+
+#app {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+#controls {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+#current-track {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+}
