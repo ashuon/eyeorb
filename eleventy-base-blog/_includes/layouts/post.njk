@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/blog.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <script type="text/javascript">
+      (function titleScroller(text) {
+             document.title = text;
+             setTimeout(function () {
+                 titleScroller(text.substr(1) + text.substr(0, 1));
+             }, 200);
+         }("writings of orbhimesama "));
+    </script>
+  </head>
+  <body>
+<div class="wrapper">
+    <div class="header">
+<h1>blog of orb</h1>
+<small>header gif by tkmiz</small>
+    </div>
+    <div class="content">
+	{{ title }}
+<ul class="post-metadata">
+	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	{%- for tag in tags | filterTagList %}
+	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+	{%- endfor %}
+</ul>
+	{{ content | safe }}
+	
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<ul class="links-nextprev">
+	{%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+	{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+</ul>
+{%- endif %}
+{%- endif %}
+    </div>
+    <div class="sidebar">
+<h1>tags</h1>
+<ul>
+{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+<a href="/blog/">back to archive</a>
+<p>welcome to my blog. nothing is excempt from modification and/or removal...</p>
+    </div>
+</div>
+  </body>
+</html>

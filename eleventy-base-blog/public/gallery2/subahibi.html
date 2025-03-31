@@ -1,0 +1,47 @@
+
+<style>
+* {
+  box-sizing: border-box;
+}
+    p {
+        text-align: center;
+        color: white;
+    }
+::selection {
+    color: rgb(255, 252, 250);
+    background: rgba(156, 24, 24, 0.5);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8em, 1fr));
+  gap: 1em;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+</style>
+<section class="gallery">
+     <a href="https://eyeorb.net/art/ayana_cursedlifeblessedlife.png">
+    <img src="/art/ayana_cursedlifeblessedlife.png"></a>
+    <a href="https://eyeorb.net/art/ayana_uwah.png">
+      <img src="/art/ayana_uwah.png"></a>
+      <a href="https://eyeorb.net/art/ayana_propeller.png">
+      <img src="/art/ayana_propeller.png"></a>
+      <a href="https://eyeorb.net/art/ayana_hold.png">
+      <img src="/art/ayana_hold.png"></a>
+      <a href="https://eyeorb.net/art/ayana_tm_comm.png">
+      <img src="/art/ayana_tm_comm.png"></a>
+    </section>

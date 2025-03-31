@@ -1,0 +1,67 @@
+---js
+// <script>
+const pagination = {
+	data: "collections",
+	size: 1,
+	alias: "tag",
+	filter: ["all", "posts"],
+	// addAllPagesToCollections: true,
+};
+
+const eleventyExcludeFromCollections = true;
+
+const eleventyComputed = {
+	title: "Tagged '{{ tag }}'",
+	permalink: function(data) {
+		return `/tags/${this.slugify(data.tag)}/`;
+	}
+};
+---
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/blog.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+    <script type="text/javascript">
+      (function titleScroller(text) {
+             document.title = text;
+             setTimeout(function () {
+                 titleScroller(text.substr(1) + text.substr(0, 1));
+             }, 200);
+         }("writings of orbhimesama "));
+    </script>
+  </head>
+  <body>
+<div class="wrapper">
+    <div class="header">
+<h1>blog of orb</h1>
+<small>header gif by tkmiz</small>
+    </div>
+    <div class="content">
+<h1>Tagged “{{ tag }}”</h1>
+
+{% set postslist = collections[ tag ] %}
+{% include "postslist.njk" %}
+
+<p>See <a href="tags.njk">all tags</a>.</p>
+</ul>
+
+    </div>
+    <div class="sidebar">
+<h1>tags</h1>
+<ul>
+{% for tag in collections | getKeys | filterTagList | sortAlphabetically %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+<a href="/blog/">back to archive</a>
+<p>welcome to my blog. nothing is excempt from modification and/or removal...</p>
+    </div>
+</div>
+  </body>
+</html>

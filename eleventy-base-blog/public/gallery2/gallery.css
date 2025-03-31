@@ -1,0 +1,78 @@
+body {
+ background-image: linear-gradient(black, #000000,#670E0E);
+ height: 100vh;
+ color: white;
+}
+  
+.everything {
+    margin: auto;
+    translate: 0% 20%;
+    height: 60vh;
+    width: 100vh;
+    border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAWxJREFUWEftWe0SgyAMm+//0NvpHZ50bZMUp2M3//GZEEpbcHm8f0+nbq1aTH3ULxi+V7PzdP3soHW2ryfaCHrkjwuI2pGStl3CO4JKA1VWiYlRwqydIoJsve2nltsaUrypiZ6lSNWUXHxP0WmIotOpLoRVtuG6fjaz0cjIbyPKEjrBI0lTdIJkfhRtmYRa6BwSRf7MthewuyFNJCpkZ7EeRYzLiapbrPZHXgQteMNjTv0o0Oj4kKjqfpAiiCiFd2ZkYglTxA6JOtx6NntiCSKv8vHs6Tai6taMEqXw/jaayKza/vyHibIZ557P2qo6//wOHynzj/WBQvvWR7HY1qP8Ee1ENB/KBbb2yttTlOheRnTU9lSiSEn6zjQKrI5P3RbzpNMA0dXE2nC17Co9NVE1Fkd5JjsPFamY7AklvLcRRcQoBexVIilTeIyNRj8HqoeFNYluAVM9jSPp2fZRv5kGgEoItcRVgr/9n+kFOnD0EcCqP50AAAAASUVORK5CYII=') 14 /  14px / 0 round;
+    border-width:  14px;
+    border-style:  solid; 
+    background-image:linear-gradient(#B03A4D,#75424A) ;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.dates {
+    grid-column: span 3 / span 3;
+    border: 6px double #2C2527;
+    background-image: linear-gradient(rgb(255, 0, 0, 0.6), rgb(214, 162, 162)), url('tkmiz4.gif');
+    background-position: 100%, center;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.gallery {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border: 6px double #2C2527;
+    background-image: linear-gradient(rgb(255, 0, 0, 0.4), rgb(202, 178, 178)), url(bg_prettyinpink.gif);
+}
+
+.sidebar {
+    padding: 10px;
+    text-align: center;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border: 6px double #2C2527;
+    background-image: linear-gradient(rgb(255, 0, 0, 0.5), rgb(202, 178, 178)), url(bg_prettyinpink.gif);
+position: relative;
+}
+a {
+    color: white;
+text-shadow: rgb(226, 17, 17) 2px 1px 10px;
+}
+
+h1 {
+font-size: 25px;
+color: rgb(255, 255, 255);
+}
+
+h1:before {
+    content: url('death_pixel.gif');
+    width: 10px;
+}
+
+::selection {
+    color: rgb(255, 252, 250);
+    background: rgba(156, 24, 24, 0.5);
+}
+
+#lonks {
+    color: white;
+}
+
+#lonks:before {
+    content: url('swirl.gif')
+}

@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../archive/newmain.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>i</title>
+    <script type="text/javascript">
+                    // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+
+      let username = "eye"; // <<<--- Insert your username here!
+
+      (async () => {
+        try {
+          const request = await fetch(`https://nekoweb.org/api/site/info/${username}`,);
+          const json = await request.json();
+
+          const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+          const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+          if (document.getElementById("created")) document.getElementById("created").innerHTML = `<em>Created</em>: ${created}`;
+          if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `<em>Updated</em>: ${updated}`;
+          if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `<em>Visits</em>: ${json.views}`;
+          if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `<em>Followers</em>: ${json.followers}`;
+        } catch (error) {
+          console.error(error);
+        }
+      })();
+    </script>
+    <style>
+      .yaylinks {
+             display: block;
+             padding-left: 3px;
+             font-size: 15px;
+             border: 4px transparent #FA1B39;
+             transition: box-shadow 0.9s ease 0s, -ms-transform 0.9s ease 0s, -webkit-transform 0.9s ease 0s, transform 0.9s ease 0s;
+             background-color: transparent;
+             color: black;
+          }
+          .yaylinks:hover {
+             display: block;
+             padding-left: 3px;
+             font-size: 15px;
+             border: 4px transparent #FA1B39;
+             transition: box-shadow 0.9s ease 0s, -ms-transform 0.9s ease 0s, -webkit-transform 0.9s ease 0s, transform 0.9s ease 0s;
+             background-color: #16131a;
+             color: grey;
+          }
+          .yaylinks:before {
+              content: '𓁹';
+              font-size: 17px;
+          }
+    </style>
+  </head>
+  <body>
+    <audio id="myaudio" src="music/wewa.WAV"></audio>
+    <audio id="koishiaudio" src="music/waw.WAV"></audio>
+    <div class="everythingallpowerful">
+      <div class="wrapper">
+        <div class="sidebigbox">
+          <!--CALENDAR CODE STARTS HERE-->
+          <!--CALENDAR CODE STARTS HERE-->
+          <!--CALENDAR CODE STARTS HERE-->
+          <div class="calendar">
+            <style>
+
+
+
+              td{
+                  background:black;
+                  color:white;
+              }
+            </style>
+
+            <!--CODE-->
+
+            <div id="calendar-container">
+              <div
+                id="MyClockDisplay"
+                class="clock"
+                onload="showTime()"
+                style="font-size: 12px;letter-spacing: 4px;text-align:center;background-color:black;border-top:3px ridge black;border-left:3px ridge black;border-right:3px ridge black;color:white;border-bottom:none;width: 150px;"
+              ></div>
+
+              <script type="text/javascript">
+                function showTime(){
+                    var date = new Date();
+                    var h = date.getHours(); // 0 - 23
+                    var m = date.getMinutes(); // 0 - 59
+                    var s = date.getSeconds(); // 0 - 59
+                    var session = "AM";
+
+                    if(h == 0){
+                        h = 12;
+                    }
+
+                    if(h > 12){
+                        h = h - 12;
+                        session = "PM";
+                    }
+
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+
+                    var time = h + ":" + m + ":" + s + " " + session;
+                    document.getElementById("MyClockDisplay").innerText = time;
+                    document.getElementById("MyClockDisplay").textContent = time;
+
+                    setTimeout(showTime, 1000);
+
+                }
+
+                showTime();
+              </script>
+              <div
+                class="calendar"
+                align="center"
+                style="height: 150px;background-color: black;border: 3px ridge black;color:white;font-size: 10px;"
+              >
+                <script text="JavaScript">
+
+                  monthnames = new Array(
+                    'January',
+                    'February',
+                    'March',
+                    'April',
+                    'May',
+                    'June',
+                    'July',
+                    'August',
+                    'September',
+                    'October',
+                    'November',
+                    'December'
+                  );
+                  var linkcount = 0;
+                  class addlink {
+                    constructor(month, day, href) {
+                      var entry = new Array(3);
+                      entry[0] = month;
+                      entry[1] = day;
+                      entry[2] = href;
+                      this[(linkcount += 1)] = entry;
+                    }
+                  }
+
+                  Array.prototype.addlink = addlink;
+                  linkdays = [];
+                  monthdays = new Array(12);
+                  monthdays[0] = 31;
+                  monthdays[1] = 28;
+                  monthdays[2] = 31;
+                  monthdays[3] = 30;
+                  monthdays[4] = 31;
+                  monthdays[5] = 30;
+                  monthdays[6] = 31;
+                  monthdays[7] = 31;
+                  monthdays[8] = 30;
+                  monthdays[9] = 31;
+                  monthdays[10] = 30;
+                  monthdays[11] = 31;
+                  todayDate = new Date();
+                  thisday = todayDate.getDay();
+                  thismonth = todayDate.getMonth();
+                  thisdate = todayDate.getDate();
+                  thisyear = todayDate.getYear();
+                  thisyear = thisyear % 100;
+                  thisyear = thisyear < 50 ? 2000 + thisyear : 1900 + thisyear;
+                  if ((thisyear % 4 === 0 && !(thisyear % 100 === 0)) || thisyear % 400 === 0) {
+                    monthdays[1] += 1;
+                  }
+                  startspaces = thisdate;
+                  while (startspaces > 7) {
+                    startspaces -= 7;
+                  }
+                  startspaces = thisday - startspaces + 1;
+                  if (startspaces < 0) {
+                    startspaces += 7;
+                  }
+                  document.write("<font face='arial'>");
+                  document.write('<table border=0 ');
+                  document.write(' style="text-align: center;" cellpadding=2 cellspacing=4>');
+                  document.write(
+                    '<tr><td colspan=7><center>' +
+                    monthnames[thismonth] +
+                    ' ' +
+                    thisyear +
+                    '</strong></center></font></td></tr>'
+                  );
+                  document.write('<tr>');
+                  document.write('<td align=center><b>S</b></td>');
+                  document.write('<td align=center><b>M</b></td>');
+                  document.write('<td align=center><b>T</b></td>');
+                  document.write('<td align=center><b>W</b></td>');
+                  document.write('<td align=center><b>T</b></td>');
+                  document.write('<td align=center><b>F</b></td>');
+                  document.write('<td align=center><b>S</b></td>');
+                  document.write('</tr>');
+                  document.write('<tr>');
+                  for (s = 0; s < startspaces; s += 1) {
+                    document.write('<td> </td>');
+                  }
+                  count = 1;
+                  while (count <= monthdays[thismonth]) {
+                    for (b = startspaces; b < 7; b += 1) {
+                      linktrue = false;
+                      document.write('<td>');
+                      for (c = 0; c < linkdays.length; c += 1) {
+                        if (linkdays[c] != null) {
+                          if (linkdays[c][0] === thismonth + 1 && linkdays[c][1] === count) {
+                            document.write('<a href="' + linkdays[c][2] + '">');
+                            linktrue = true;
+                          }
+                        }
+                      }
+                      if (count === thisdate) {
+                        document.write("<b><font color='#aa68f2'></b>");
+                      }
+                      if (count <= monthdays[thismonth]) {
+                        document.write(count);
+                      } else {
+                        document.write(' ');
+                      }
+                      if (count === thisdate) {
+                        document.write('</font>');
+                      }
+                      if (linktrue) {
+                        document.write('</a>');
+                      }
+                      document.write('</td>');
+                      count += 1;
+                    }
+                    document.write('</tr>');
+                    document.write('<tr>');
+                    startspaces = 0;
+                  }
+                  document.write('</table></p>');
+                </script>
+              </div>
+            </div>
+          </div>
+          <!--CALENDAR CODE ENDS HERE-->
+          <!--CALENDAR CODE ENDS HERE-->
+          <!--CALENDAR CODE ENDS HERE-->
+          <!--CALENDAR CODE ENDS HERE-->
+          <div class="poll">
+            <form method="post" action="https://poll.pollcode.com/56545431">
+              <div
+                style="background-color:#EEEEEE;padding:2px;width:150px;font-family:Verdana;font-size:small;color:#000000;"
+              >
+                <div style="padding:2px 0px 4px 2px;">
+                  <strong>your favorite chireiden touhou?</strong>
+                </div>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="1"
+                  id="answer565454311"
+                  style="float:left;"
+                /><label for="answer565454311" style="float:left;width:125px;"
+                  >utsuho</label
+                >
+                <div style="clear:both;height:2px;"></div>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="2"
+                  id="answer565454312"
+                  style="float:left;"
+                /><label for="answer565454312" style="float:left;width:125px;"
+                  >rin</label
+                >
+                <div style="clear:both;height:2px;"></div>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="3"
+                  id="answer565454313"
+                  style="float:left;"
+                /><label for="answer565454313" style="float:left;width:125px;"
+                  >koishi</label
+                >
+                <div style="clear:both;height:2px;"></div>
+                <input
+                  type="radio"
+                  name="answer"
+                  value="4"
+                  id="answer565454314"
+                  style="float:left;"
+                /><label for="answer565454314" style="float:left;width:125px;"
+                  >satori</label
+                >
+                <div style="clear:both;height:2px;"></div>
+                <div align="center" style="padding:3px;">
+                  <input type="submit" value=" Vote " />&nbsp;<input
+                    type="submit"
+                    name="view"
+                    value=" View "
+                  />
+                </div>
+                <div align="right" style="font-size:10px">
+                  pollcode.com <a href="https://pollcode.com/">free polls</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--POLL CODE ENDS HERE-->
+          <div style="margin-top: 2px;">
+            <center style="color: #9a9aa8;">
+              <em id="created">Created:</em>
+              <br />
+              <em id="updated">Updated:</em>
+              <br />
+              <em id="visitors">Visits:</em>
+              <br /><em id="followers">Followers:</em>
+            </center>
+          </div>
+          <div class="song">
+            <b
+              ><p style="margin: 0; padding-top: 5px;text-align: center;">
+                song of the month
+              </p></b
+            >
+            <hr style="border-top: double; margin-bottom:0;" />
+            <iframe
+              width="155"
+              height="130"
+              src="https://www.youtube.com/embed/Sv9YH6Xl00g"
+              title="Porcelain"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="bigbox1">
+          <div class="header">
+            <a
+              style="opacity: 0.3; color: white"
+              href="https://danbooru.donmai.us/posts/7355184"
+              >by reverinth</a
+            >
+          </div>
+          <div class="sidebox">
+            <div class="links">
+              <p>
+                <a
+                  class="yaylinks"
+                  onmouseover="document.getElementById('myaudio').play()"
+                  style="font-size: 18px;"
+                  href="../archive/bio.html"
+                  >info</a
+                >
+              </p>
+              <p>
+                <a
+                  class="yaylinks"
+                  onmouseover="document.getElementById('myaudio').play()"
+                  style="font-size: 18px;"
+                  href="../archive/blog.html"
+                  >blog</a
+                >
+              </p>
+              <p>
+                <a
+                  class="yaylinks"
+                  onmouseover="document.getElementById('myaudio').play()"
+                  style="font-size: 18px;"
+                  href="../archive/shrines.html"
+                  >shrines</a
+                >
+              </p>
+              <div class="dropdown">
+                <p
+                  style="font-size: 18px;"
+                  onmouseover="document.getElementById('myaudio').play()"
+                  class="dropbtn yaylinks"
+                >
+                  extra
+                </p>
+                <div class="dropdown-content">
+                  <a
+                    class="yaylinks"
+                    onmouseover="document.getElementById('myaudio').play()"
+                    href="#"
+                    >art</a
+                  >
+                  <a
+                    class="yaylinks"
+                    onmouseover="document.getElementById('myaudio').play()"
+                    href="#"
+                    >cosplay</a
+                  >
+                  <a
+                    class="yaylinks"
+                    onmouseover="document.getElementById('myaudio').play()"
+                    href="#"
+                    >photography</a
+                  >
+                </div>
+              </div>
+              <p>
+                <a
+                  class="yaylinks"
+                  style="font-size: 18px;"
+                  onmouseover="document.getElementById('myaudio').play()"
+                  href="https://eye.atabook.org/"
+                  >guestbook</a
+                >
+              </p>
+              <p>
+                <a
+                  class="yaylinks"
+                  onmouseover="document.getElementById('myaudio').play()"
+                  style="font-size: 18px;"
+                  href="../archive/links.html"
+                  >next?</a
+                >
+              </p>
+
+              <p style="line-height: 0.6">click koishi</p>
+              <img
+                onclick="document.getElementById('koishiaudio').play()"
+                style="position: absolute; left: -20px; bottom: 35px"
+                src="../images/koishi_wobble.gif"
+                width="220"
+              />
+            </div>
+            <div class="button">
+              <img src="../images/sitebutton.gif" width="80" />
+            </div>
+          </div>
+          <div class="briefinfo">
+            <hr style="border: dashed;" />
+            <p>
+              eye is my self-expression hub for whatever i want.... i'm an isolated and gross
+              otaku from new england. i frequently close the site, don't mind the forever unfinishedness
+            </p>
+            <div class="status">
+              <div style="margin: 0;" id="statuscafe">
+                <div id="statusicon"></div>
+                <div id="statuscafe-username"></div>
+                <div id="statuscafe-content"></div>
+              </div>
+              <script
+                src="https://status.cafe/current-status.js?name=orb"
+                defer
+              ></script>
+            </div>
+            <h1>featured image of the week</h1>
+            <img src="../images/imageotw/Gaj4zckbEAgyVAK.jpg" width="150" />
+            <p>
+              source:
+              <a href="https://x.com/siturensindoro/status/1849001211518963992"
+                >tsuitta</a
+              >
+            </p>
+
+            <iframe
+              src="https://nekoweb.org/frame/follow"
+              style="filter:grayscale(100%)"
+              frameborder="0"
+              width="170"
+              height="28"
+            ></iframe>
+          </div>
+          <div class="footer">
+            <marquee>
+              <img src="../images/buttons/dream_now.gif" width="80" />
+              <img src="../images/denpaNOW.png" width="80" /><img
+                src="../images/buttons/ayanaface.png"
+                width="80"
+              /><img src="../images/piracy.gif" width="80" /><a
+                href="https://nekoweb.org/"
+                ><img src="https://nekoweb.org/assets/buttons/button5.gif" /></a
+              ><img src="../images/thevoid.gif" /><img
+                src="../images/buttons/2hu.gif"
+              /><img src="../images/buttons/aponow.gif" /><img
+                src="../images/buttons/besteyes_ani.gif"
+              /><img src="../images/buttons/killmenow.gif" />
+              <img src="../images/buttons/60081.gif" /><img
+                src="../images/buttons/insane.gif"
+              />
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

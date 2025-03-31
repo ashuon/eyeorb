@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../shrines/pathologic/patho.css " />
+    <html lang="en">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="../../shrines/pathologic/heart.gif" />
+      <style>
+      .button {
+         display: block;
+         font-size: 20px;
+         border: 1px #9E9E9E solid;
+         background-color: black;
+         color: #9E9E9E;
+         line-height: 50px;
+         width: 120px;
+         margin: auto;
+         text-align: center;
+      }
+      .button:hover {
+         display: block;
+         font-size: 20px;
+         border: 1px #9E9E9E solid;
+         background: linear-gradient(black, #9E9E9E);
+         line-height: 50px;
+         width: 120px;
+         margin: auto;
+         text-align: center;
+      }
+      </style>
+      <script>
+            (function titleScroller(text) {
+            document.title = text;
+            setTimeout(function () {
+                titleScroller(text.substr(1) + text.substr(0, 1));
+            }, 200);
+        }("Watch my hands. The right knows not what the left does. The left knows not what the right does. The forepaw doesn't follow the hindpaw; the midfoot, the forefoot; the lower hand, the secret one; the upper hand - the elegant one. "));
+      </script>
+    </head>
+    <body>
+        <div class="mainbox">
+            <div class="sidetopbox"></div>
+            <div class="logobox">
+                <img src="../../shrines/pathologic/pathologic_logo.png" height=180 style="position: absolute;z-index: 1;top:0" >
+                <img src="../../shrines/pathologic/giant_rat_anim.gif" height=200 style="position: absolute;z-index: 1;top: 0;right:0">
+            </div>
+            <div class="iframe">
+                <iframe
+          src="../../shrines/pathologic/info.html"
+          style="width:540px;height:450px;border:none;overflow: scroll;"
+          name="iframe_a"
+        ></iframe>
+            </div>
+            <div class="sidelinks">
+                <p>
+          <a
+            class="button"
+            target="iframe_a"
+            href="../../shrines/pathologic/info.html"
+            >main</a
+          >
+        </p>
+        <p>
+          <a
+            class="button"
+            target="iframe_a"
+            href="../../shrines/pathologic/art.html"
+            >art</a
+          >
+        </p>
+        <p>
+          <a
+            class="button"
+            target="iframe_a"
+            href="../../shrines/pathologic/thoughts.html"
+            >thoughts</a
+          >
+        </p>
+        <p>
+          <a
+            class="button"
+            target="_top"
+            href="../../shrines.html"
+            >go back?</a
+          >
+        </p>
+        <img src="../../shrines/pathologic/pathologic_stamp.gif" width=100>
+        <img src="../../shrines/pathologic/chains.gif" width=140 style="filter:invert(100%)">
+        <p>site by eye<br> pathologic by ice pick lodge</p>
+            </div>
+        </div>
+    </body>
+</html>
