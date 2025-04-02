@@ -7,7 +7,9 @@ body {
     }
     
     .wrapper {
-        border: 4px double rgb(255, 255, 255, 0.6);
+        border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAA4klEQVRYR+1Zyw6AMAhz///RPg54YBLAgpOEHVWwaSkj29jAtZ/rSjHO5UnljXMlfwLi/SHl8MbdQCmQEhFD1ufZcXWBZteaVXpeGhOjvwfqceyKb2HXfwUalj4LaHiNNlC249WTPkvCqLztepTJuq7n0xGfglBmpHhpzBPxlAFqnWaymLUy3n00WoHuoyijdftoux7UXpQezJse3q5HKa7r+lVDibbH8/ejDNDuo6Cbuo+CBKrh8ODsPeK2eiK8jy4Dmn0Wr7VD6c6g3hm+Ws3CB1nSTzvTW4BWU2hbpfXO4ACihmgqtc8VhAAAAABJRU5ErkJggg==') 14 /  14px / 0 round;
+        border-width:  14px;
+        border-style:  solid;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, 1fr);

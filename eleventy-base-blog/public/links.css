@@ -20,7 +20,7 @@ body {
 .mainbox {
     width: 600px;
     height: auto;
-	background-image: linear-gradient(#0f0101, #600d0d);
+	background-image: linear-gradient(#201f31, #600d0d);
     margin: auto;
     overflow: auto;
    border: 26px solid transparent;
@@ -57,7 +57,7 @@ h1 {
 h1::after {
     display: inline-block;
     content: "";
-    border-top: .3rem dashed #890000;
+    border-top: .3rem dashed rgb(255, 0, 0, 0.5);
     width: 100%;
     margin: 0;
     transform: translateY(-1%);
