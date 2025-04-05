@@ -22,7 +22,7 @@ their biggest hits for nostalgia bait, and when they DO make original stories ag
 only want to consoom the schloppiest shit but maybe thats just booktok lmao, i dont use tiktok but i hear of stuff from it a lot... i try to buy books that appeal to me and are 
 classics and/or avant-garde, such as house of leaves and moby dick. i also read 1984 in school, for classics... getting back on topic, anime is victim of the sloppification as well. 
 why do so many anime studios greenlight manga titled like "I Got Transported To The Nether World And My Little Sister Is A Magical Demon God And She's In My Harem?!?!?" and not 
-stuff like shimeji simulation siiigh many people (especially normies) of today have no standards they just consoom whatever slop is put on their plate it seems.... i mean 
+stuff like shimeji simulation siiigh many people of today have no standards they just consoom whatever slop is put on their plate it seems.... i mean 
 to each their own i guess but i really wish studios didn't just greenlight whatever would make the most money... <br>
 
 i really want to make my own thing with my vague ideas one day, but i doubt i have the mental strength to deal with a wide audience for it... i already cant handle stupid 
