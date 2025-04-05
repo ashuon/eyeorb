@@ -32,12 +32,12 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/secondpost/</loc>
-		<lastmod>2025-04-02</lastmod>
+		<loc>https://example.com/blog/unexplained/</loc>
+		<lastmod>2025-04-05</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2025-04-02</lastmod>
+		<lastmod>2025-04-05</lastmod>
 	</url>
 </urlset>

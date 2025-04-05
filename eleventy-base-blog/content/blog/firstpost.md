@@ -4,7 +4,6 @@ description: hihi hello hello helo
 date: 2025-03-31
 tags: personal
 ---
-## cool new blog yay
 
 hello... i finally figured out how to use 11ty with the help of my very very awesome friend tm :pray: 
 it was tough to figure out how to do it at first, but got easier and easier... i really want to work on my site in 
