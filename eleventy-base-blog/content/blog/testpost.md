@@ -1,7 +1,7 @@
 ---
 title: test
 description: helo
-date: 1994-01-31
+date: 2025-01-31
 tags: ["personal", "hobbies"]
 ---
 

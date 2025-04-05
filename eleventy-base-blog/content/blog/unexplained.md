@@ -1,5 +1,5 @@
 ---
-title: surreal/unexplained stuff
+title: the surreal/unexplained
 description: since i was little, i have always liked media of an interpretive or open ended nature, especially ones of the surreal genre.
 date: 2025-04-05
 tags: ["hobbies", "personal"]
