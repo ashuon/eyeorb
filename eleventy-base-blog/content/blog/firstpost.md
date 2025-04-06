@@ -3,6 +3,7 @@ title: new blog + stuff
 description: hihi hello hello helo
 date: 2025-03-31
 tags: personal
+url: {{ absolutePostUrl }}
 ---
 
 hello... i finally figured out how to use 11ty with the help of my very very awesome friend tm :pray: 
