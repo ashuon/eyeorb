@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>eyeorb</title>
+        <description>my blog</description>
+        <link> https://eyeorb.net/ </link>
+        <lastBuildDate>Fri, 04 Apr 2025 20:00:00 EDT</lastBuildDate>
+        <atom:link href="https://eyeorb.net/feed/rssfeed.xml" rel="self" type="application/rss+xml"/>
+        <language>en</language>
+        <managingEditor>orbfunn@gmail.com (eyeorb)</managingEditor>
+        <webMaster>orbfunn@gmail.com (eyeorb)</webMaster>
+        <item>
+            <title>the surreal/unexplained</title>
+            <link> https://eyeorb.net/blog/unexplained/ </link>
+            <pubDate>Fri, 04 Apr 2025 20:00:00 EDT</pubDate>
+            <guid> https://eyeorb.net/blog/unexplained/ </guid>
+            <description><![CDATA[since i was little, i have always liked media of an interpretive or open ended nature, especially ones of the surreal genre.]]></description>
+        </item>
+        <item>
+            <title>new blog + stuff</title>
+            <link> https://eyeorb.net/blog/firstpost/ </link>
+            <pubDate>Sun, 30 Mar 2025 20:00:00 EDT</pubDate>
+            <guid> https://eyeorb.net/blog/firstpost/ </guid>
+            <description><![CDATA[hihi hello hello helo]]></description>
+        </item>
+        <item>
+            <title>This is my third post.</title>
+            <link> https://eyeorb.net/blog/thirdpost/ </link>
+            <pubDate>Thu, 23 Aug 2018 20:00:00 EDT</pubDate>
+            <guid> https://eyeorb.net/blog/thirdpost/ </guid>
+            <description><![CDATA[This is a post on My Blog about win-win survival strategies.]]></description>
+        </item>
+        <item>
+            <title>test</title>
+            <link> https://eyeorb.net/blog/testpost/ </link>
+            <pubDate>Sat, 30 Jan 1993 19:00:00 EST</pubDate>
+            <guid> https://eyeorb.net/blog/testpost/ </guid>
+            <description><![CDATA[helo]]></description>
+        </item>
+    </channel>
+</rss>

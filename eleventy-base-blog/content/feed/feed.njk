@@ -1,29 +1,27 @@
 ---
 # Metadata comes from _data/metadata.js
-permalink: /feed/rssfeed.json
+permalink: /feed/rssfeed.xml
 ---
-{
-    "version": "https://jsonfeed.org/version/1.1",
-    "title": "{{ metadata.title }}",
-    "language": "{{ metadata.language }}",
-    "home_page_url": "{{ metadata.url | addPathPrefixToFullUrl }}",
-    "feed_url": "{{ permalink | htmlBaseUrl(metadata.url) }}",
-    "description": "{{ metadata.description }}",
-    "author": {
-        "name": "{{ metadata.author.name }}",
-        "url": "{{ metadata.author.url }}"
-    },
-    "items": [
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ metadata.title }}</title>
+        <description>{{ metadata.description }}</description>
+        <link> {{ metadata.url | addPathPrefixToFullUrl }} </link>
+        <lastBuildDate>{{ collections.posts | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+        <atom:link href="{{ permalink | htmlBaseUrl(metadata.url) }}" rel="self" type="application/rss+xml"/>
+        <language>{{ metadata.language }}</language>
+        <managingEditor>{{ metadata.author.email }} ({{ metadata.author.name }})</managingEditor>
+        <webMaster>{{ metadata.author.email }} ({{ metadata.author.name }})</webMaster>
+        
         {%- for post in collections.posts | reverse %}
-        {%- set absolutePostUrl = post.url | htmlBaseUrl(metadata.url) %}
-        {
-            "id": "{{ absolutePostUrl }}",
-            "url": "{{ absolutePostUrl }}",
-            "title": "{{ post.data.title }}",
-            "content_html": {% if post.templateContent %}{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) | dump | safe }}{% else %}""{% endif %},
-            "date_published": "{{ post.date | dateToRfc3339 }}"
-        }
-        {% if not loop.last %},{% endif %}
+        <item>
+            <title>{{ post.data.title }}</title>
+            <link> {{ post.url | htmlBaseUrl(metadata.url) }} </link>
+            <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+            <guid> {{ post.url | htmlBaseUrl(metadata.url) }} </guid>
+            <description><![CDATA[{{ post.data.description | transformWithHtmlBase(post.url | htmlBaseUrl(metadata.url), post.url) }}]]></description>
+        </item>
         {%- endfor %}
-    ]
-}
+    </channel>
+</rss>
