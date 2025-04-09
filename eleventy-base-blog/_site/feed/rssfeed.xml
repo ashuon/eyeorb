@@ -4,16 +4,16 @@
         <title>eyeorb</title>
         <description>my blog</description>
         <link> https://eyeorb.net/ </link>
-        <lastBuildDate>Sun, 06 Apr 2025 20:00:00 EDT</lastBuildDate>
+        <lastBuildDate>Tue, 08 Apr 2025 20:00:00 EDT</lastBuildDate>
         <atom:link href="https://eyeorb.net/feed/rssfeed.xml" rel="self" type="application/rss+xml"/>
         <language>en</language>
         <managingEditor>orbfunn@gmail.com (eyeorb)</managingEditor>
         <webMaster>orbfunn@gmail.com (eyeorb)</webMaster>
         <item>
             <title>merchandise</title>
-            <link> https://eyeorb.net/blog/merchandise/ </link>
-            <pubDate>Sun, 06 Apr 2025 20:00:00 EDT</pubDate>
-            <guid> https://eyeorb.net/blog/merchandise/ </guid>
+            <link> https://eyeorb.net/blog/merch/merchandise/ </link>
+            <pubDate>Tue, 08 Apr 2025 20:00:00 EDT</pubDate>
+            <guid> https://eyeorb.net/blog/merch/merchandise/ </guid>
             <description><![CDATA[yaya]]></description>
         </item>
         <item>
