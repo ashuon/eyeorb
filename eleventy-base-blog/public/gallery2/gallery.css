@@ -76,3 +76,8 @@ h1:before {
 #lonks:before {
     content: url('swirl.gif')
 }
+
+.sidebar > p:before {
+    content: url('death_pixel.gif');
+    width: 10px;
+}

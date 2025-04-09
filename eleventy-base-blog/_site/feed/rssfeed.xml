@@ -4,11 +4,18 @@
         <title>eyeorb</title>
         <description>my blog</description>
         <link> https://eyeorb.net/ </link>
-        <lastBuildDate>Fri, 04 Apr 2025 20:00:00 EDT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Apr 2025 20:00:00 EDT</lastBuildDate>
         <atom:link href="https://eyeorb.net/feed/rssfeed.xml" rel="self" type="application/rss+xml"/>
         <language>en</language>
         <managingEditor>orbfunn@gmail.com (eyeorb)</managingEditor>
         <webMaster>orbfunn@gmail.com (eyeorb)</webMaster>
+        <item>
+            <title>merchandise</title>
+            <link> https://eyeorb.net/blog/merchandise/ </link>
+            <pubDate>Sun, 06 Apr 2025 20:00:00 EDT</pubDate>
+            <guid> https://eyeorb.net/blog/merchandise/ </guid>
+            <description><![CDATA[yaya]]></description>
+        </item>
         <item>
             <title>the surreal/unexplained</title>
             <link> https://eyeorb.net/blog/unexplained/ </link>
@@ -29,13 +36,6 @@
             <pubDate>Thu, 23 Aug 2018 20:00:00 EDT</pubDate>
             <guid> https://eyeorb.net/blog/thirdpost/ </guid>
             <description><![CDATA[This is a post on My Blog about win-win survival strategies.]]></description>
-        </item>
-        <item>
-            <title>test</title>
-            <link> https://eyeorb.net/blog/testpost/ </link>
-            <pubDate>Sat, 30 Jan 1993 19:00:00 EST</pubDate>
-            <guid> https://eyeorb.net/blog/testpost/ </guid>
-            <description><![CDATA[helo]]></description>
         </item>
     </channel>
 </rss>
