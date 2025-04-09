@@ -1,6 +1,6 @@
 ---
 title: merchandise
-description: yaya
+description: i've been collecting otaku merchandise since 2020. (the year i got my own card, although it was one of those prepaid kinds for kids, controlled by parents...) the very first figure i got was remilia scarlet from touhou project,
 date: 2025-04-09
 tags: ["personal", "hobbies"]
 url: {{ absolutePostUrl }}
