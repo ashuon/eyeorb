@@ -377,7 +377,7 @@ function createComment(data) {
     name.innerText = filteredName;
     name.className = 'c-name';
     if(data.Admin == true) {
-        name.insertAdjacentHTML('beforeend', " <img src='./pictures/endsky_blink.gif' style='width:15px; height:15px' title='admin (eyeorb)' alt='admin'> ");
+        name.insertAdjacentHTML('beforeend', " <img src='endsky_blink.gif' style='width:15px; height:15px' title='admin (eyeorb)' alt='admin'> ");
         } 
     comment.appendChild(name);
 
