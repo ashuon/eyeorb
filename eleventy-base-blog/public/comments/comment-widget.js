@@ -25,7 +25,7 @@ const s_textId = '1608145450';
 const s_pageId = '1063004093';
 const s_replyId = '1542903703';
 const s_sheetId = '1JFdLRH69ZgDR-Xi3UfNq4jc-mWsHKf9NXqxFwc-LQGA';
-const s_adminId = '1164776414';
+const s_adminId = '1438006547';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -377,7 +377,7 @@ function createComment(data) {
     name.innerText = filteredName;
     name.className = 'c-name';
     if(data.Admin == true) {
-        name.insertAdjacentHTML('beforeend', " <img src='/pictures/endsky_blink.gif' style='width:15px; height:15px' title='admin (eyeorb)' alt='admin'> ");
+        name.insertAdjacentHTML('beforeend', " <img src='./pictures/endsky_blink.gif' style='width:15px; height:15px' title='admin (eyeorb)' alt='admin'> ");
         } 
     comment.appendChild(name);
 
