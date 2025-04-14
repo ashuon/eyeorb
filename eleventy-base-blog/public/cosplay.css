@@ -1,0 +1,73 @@
+body {
+    background-image: url('cosplay/celesestrellas.gif');
+	font-family: "MS UI Gothic", Verdana, sans-serif;
+}
+
+p {
+    background-image: linear-gradient(rgb(78, 43, 133), rgb(111, 127, 216));
+    color: transparent;
+    background-clip: text;
+}
+h1 {
+    background-image: linear-gradient(rgb(107, 59, 184), rgb(111, 127, 216));
+    color: transparent;
+    background-clip: text;
+}
+
+a {
+    background-image: linear-gradient(rgb(175, 250, 255), rgb(111, 127, 216));
+    color: transparent;
+    background-clip: text;
+}
+
+::selection {
+    background: rgb(131, 131, 255);
+    color: white;
+}
+
+mark {
+    background: rgb(46, 46, 92, 0.9);
+    color: white;
+}
+.container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+gap: 10px;  
+    border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAA4klEQVRYR+1Zyw6AMAhz///RPg54YBLAgpOEHVWwaSkj29jAtZ/rSjHO5UnljXMlfwLi/SHl8MbdQCmQEhFD1ufZcXWBZteaVXpeGhOjvwfqceyKb2HXfwUalj4LaHiNNlC249WTPkvCqLztepTJuq7n0xGfglBmpHhpzBPxlAFqnWaymLUy3n00WoHuoyijdftoux7UXpQezJse3q5HKa7r+lVDibbH8/ejDNDuo6Cbuo+CBKrh8ODsPeK2eiK8jy4Dmn0Wr7VD6c6g3hm+Ws3CB1nSTzvTW4BWU2hbpfXO4ACihmgqtc8VhAAAAABJRU5ErkJggg==') 14 /  14px / 0 round;
+    border-width:  0px;
+    border-style:  solid; 
+    border-image-outset: 10px; 
+padding: 10px;
+width: 600px;
+height: 600px;
+margin: 0 auto;
+margin-top: 40px;
+background-image: linear-gradient(#6D669B, #2a2a52, rgb(32, 28, 37))
+}
+
+
+.header { 
+    grid-area: 1 / 1 / 2 / 4;
+    border: 4px double #172524;
+    padding: 5px;
+    background-image: url('cosplay/koiscos.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.mainbox { 
+    grid-area: 2 / 2 / 6 / 4;   
+    border: 4px double #172524;
+    padding: 5px;
+    background-image: linear-gradient(rgb(191, 183, 241, 0.5), rgb(204, 204, 255, 0.5), rgb(222, 217, 255, 0.5)), url(cosplay/heartsbloo.gif);
+}
+.sidebox { 
+    grid-area: 2 / 1 / 6 / 2;
+    border: 4px double #172524;
+    padding: 10px;
+    background-image: url('/cosplay/koishi_yay_t_2.png'), linear-gradient(rgb(25, 25, 37), rgb(204, 204, 255, 0.5), rgb(222, 217, 255, 0.5)), url(cosplay/back82.gif);
+    background-position: 0 0;
+    background-size: 130%, auto, auto;
+    background-repeat: no-repeat, no-repeat, auto;
+    font-size: 20px;
+} 

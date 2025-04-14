@@ -115,6 +115,7 @@ grid-area: 2 / 1 / 6 / 2;
   border-image-slice: 1;
   background-image: url('pictures/koishi_transparent.png'), linear-gradient(transparent, transparent, #220105);
   box-shadow: 5px 5px 20px black inset;
+  line-height: 0.5;
 }
 .komeiji { 
 grid-area: 3 / 2 / 6 / 4;
